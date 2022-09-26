@@ -1,15 +1,12 @@
-# This file describes an application. You can have multiple applications
-# in the same project.
-
-# The name of this app. Must be unique within a project.
-name: app
+# The name app. Must be unique within a project.
+name: testsh
 
 # The runtime the application uses.
 type: 'golang:1.15'
 
 variables:
     env:
-        V2RAY_VERSION: 'v1.3.1'
+        V2RAY_VERSION: 'v1.3.2'
         GOSS_VERSION: 'v0.1.5'
 
 # The hooks that will be triggered when the package is deployed.
@@ -38,4 +35,4 @@ web:
       passthru: true
 
 # The size of the persistent disk of the application (in MB).
-disk: 1024
+disk: 1000
